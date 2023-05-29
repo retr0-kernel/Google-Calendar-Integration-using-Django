@@ -25,22 +25,19 @@ This Django project demonstrates the integration of Google Calendar using the Dj
 2. Navigate to the project's root directory:
 
 ```
-cd google-calendar-integration
-
+   cd google-calendar-integration
 ```
 3. Create a virtual environment (optional but recommended):
 
 ```
-python3 -m venv venv
-source venv/bin/activate
-
+  python3 -m venv venv
+  source venv/bin/activate
 ```
 
 4. Install the required packages:
 
 ```
-pip install -r requirements.txt
-
+  pip install -r requirements.txt
 ```
 
 5. Configure the Google API credentials:
@@ -48,12 +45,12 @@ Obtain the client ID and client secret from the Google Cloud Console.
 Update the settings.py file in the project's Django settings with your Google API credentials:
 
 ```
-GOOGLE_CLIENT_ID = 'your-client-id'
-GOOGLE_CLIENT_SECRET = 'your-client-secret'
+  GOOGLE_CLIENT_ID = 'your-client-id'
+  GOOGLE_CLIENT_SECRET = 'your-client-secret'
 ```
 
 6. Run the Django development server:
 
 ```
-python manage.py runserver
+  python manage.py runserver
 ```
