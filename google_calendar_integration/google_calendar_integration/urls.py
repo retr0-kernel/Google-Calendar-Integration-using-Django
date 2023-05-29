@@ -14,9 +14,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.urls import path
+from calendar_integration.views import GoogleCalendarInitView, GoogleCalendarRedirectView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('rest/v1/calendar/init/', GoogleCalendarInitView.as_view(), name='calendar-init'),
+    path('rest/v1/calendar/redirect/', GoogleCalendarRedirectView.as_view(), name='calendar-redirect'),
 ]
+
