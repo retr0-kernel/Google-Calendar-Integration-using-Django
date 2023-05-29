@@ -18,7 +18,7 @@ This Django project demonstrates the integration of Google Calendar using the Dj
 
 1. Clone the repository or download the source code:
 
-   ```bash
+```
    git clone https://github.com/your-username/google-calendar-integration.git
 ```
 
